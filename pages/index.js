@@ -2,6 +2,7 @@ import { useReducer } from 'react';
 import React from 'react';
 import InputComponent from '../src/components/input';
 import DisplayComponent from '../src/components/display';
+import { Grid } from '@material-ui/core';
 
 export const initialState = {
   textValue: ``
@@ -31,13 +32,11 @@ export default function Home() {
     }}>
     <div style={{
         position: 'absolute', left: '50%', top: '50%',
-        transform: 'translate(-50%, -50%)'
+        transform: 'translate(-50%, -50%)',
+        display: `flex`
     }}>
-      <div>This is HOMEPAGE Component</div>
-      <br></br>
+      <h2>This is HOME Component</h2>
       <InputComponent></InputComponent>
-      <br></br>
-      <br></br>
       <DisplayComponent></DisplayComponent>
     </div>
       

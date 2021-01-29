@@ -7,7 +7,7 @@ export default function InputComponent() {
 
     return(
         <div>
-            <p>This is INPUT COMPONENT</p>
+            <h2>This is INPUT COMPONENT</h2>
             <br></br>
             <label>Input: </label>
             <Input type="text" onChange={(e) => {
@@ -15,7 +15,10 @@ export default function InputComponent() {
                 dispatch({ type: `EDIT`, textValue: text})
             }}></Input>
             <br></br>
-            <Button variant="contained" color="primary" onClick={() => dispatch({ type: `RESET`, textValue: `` })}>Reset</Button>
+            <br></br>
+            <div>
+                <Button variant="contained" color="primary" onClick={() => dispatch({ type: `RESET`, textValue: `` })}>Reset</Button>
+            </div>
         </div>
     )
 }
