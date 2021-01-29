@@ -30,12 +30,17 @@ export default function Home() {
       input,
       dispatch
     }}>
+    <h1 style={{
+        position: 'absolute', left: '50%', top: '23%',
+        transform: 'translate(-50%, -50%)',
+        display: `flex`
+    }}>Bye Bye Prop Drilling</h1>
     <div style={{
         position: 'absolute', left: '50%', top: '50%',
         transform: 'translate(-50%, -50%)',
         display: `flex`
     }}>
-      <h2>This is HOME Component</h2>
+      <h2 style={{ padding: `25px` }}>Home Component</h2>
       <InputComponent></InputComponent>
       <DisplayComponent></DisplayComponent>
     </div>

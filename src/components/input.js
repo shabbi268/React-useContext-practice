@@ -6,8 +6,8 @@ export default function InputComponent() {
     const { dispatch } = useContext(MyContext);
 
     return(
-        <div>
-            <h2>This is INPUT COMPONENT</h2>
+        <div style={{padding: `25px`}}>
+            <h2>Input Component</h2>
             <br></br>
             <label>Input: </label>
             <Input type="text" onChange={(e) => {
