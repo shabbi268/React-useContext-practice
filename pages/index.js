@@ -15,9 +15,9 @@ export const reducer = (state, action) => {
   console.log(`reducer called: `, state, action);
   switch (action.type) {
     case 'EDIT':
-      return {textValue: action.textValue, inputValue: state.inputValue };
+      return {textValue: action.textValue };
     case 'RESET':
-      return {textValue: ``,  inputValue: state.inputValue };
+      return {textValue: `` };
     default:
       return;
   }
